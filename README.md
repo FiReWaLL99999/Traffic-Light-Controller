@@ -1,7 +1,7 @@
 <b>Traffic Light Controller</b><br><br>
-The Firmware is done using MPLAB X IDE V3.00. Using compiler XC8.<br>
-The Schematic and Simulation are done using SimulIDE.<br>
-The project is made using PIC16F877 and not PIC16F877A, as the program used for simulation doesn’t support PIC16F877A.<br>
+The Firmware is done using <b>MPLAB X IDE V3.00.</b> Using compiler <b>XC8</b>.<br>
+The Schematic and Simulation are done using <b>SimulIDE</b>.<br>
+The project is made using <b>PIC16F877</b> and not <b>PIC16F877A</b>, as the program used for simulation doesn’t support <b>PIC16F877A</b>.<br>
 You can see this video where I showcase the project: https://youtu.be/a3MMaACnfRA<br>
 
 The project features a Traffic Light Controller that has 2 operation modes. Automatic Mode and Manual Mode, which can be switched between them by clicking on “Switch Mode” button.
