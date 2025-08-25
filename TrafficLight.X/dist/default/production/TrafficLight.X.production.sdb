@@ -1,0 +1,222 @@
+[p GLOBOPT AUTOSTATIC IEEE_DBL IEEE_FLT PIC14 PICREGULAR PICMID ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F877 ]
+[d frameptr 0 ]
+"12 C:\Users\Hesham Abdelkhalek\MPLABXProjects\TrafficLight.X\Main.c
+[e E951 . `uc
+MODE_AUTO 0
+MODE_MANUAL 1
+]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+"10 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"4 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul8_16.c
+[v __Umul8_16 _Umul8_16 `(ui  1 e 2 0 ]
+"6 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\pic\__eeprom.c
+[v ___eecpymem __eecpymem `(v  1 e 1 0 ]
+"39
+[v ___memcpyee __memcpyee `(v  1 e 1 0 ]
+"29 C:\Users\Hesham Abdelkhalek\MPLABXProjects\TrafficLight.X\Main.c
+[v _isr isr `II(v  1 e 1 0 ]
+"42
+[v _main main `(v  1 e 1 0 ]
+"128
+[v _init_ports init_ports `(v  1 e 1 0 ]
+"149
+[v _update_displays update_displays `(v  1 e 1 0 ]
+"164
+[v _set_lights set_lights `(v  1 e 1 0 ]
+"174
+[v _reset_cycle_timers reset_cycle_timers `(v  1 e 1 0 ]
+[v i1_reset_cycle_timers reset_cycle_timers `(v  1 e 1 0 ]
+"179
+[v _delay_100ms_and_poll_buttons delay_100ms_and_poll_buttons `(v  1 e 1 0 ]
+"164 C:/Users/Hesham Abdelkhalek/.mchp_packs/Microchip/PIC16Fxxx_DFP/1.7.162/xc8\pic\include\proc/pic16f877.h
+[v _PORTA PORTA `VEuc  1 e 1 @5 ]
+[s S91 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+"179
+[u S98 . 1 `S91 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES98  1 e 1 @5 ]
+[s S114 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"231
+[u S123 . 1 `S114 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES123  1 e 1 @6 ]
+"276
+[v _PORTC PORTC `VEuc  1 e 1 @7 ]
+"338
+[v _PORTD PORTD `VEuc  1 e 1 @8 ]
+[s S65 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+"1268
+[s S72 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S76 . 1 `S65 1 . 1 0 `S72 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES76  1 e 1 @129 ]
+"1318
+[v _TRISA TRISA `VEuc  1 e 1 @133 ]
+"1368
+[v _TRISB TRISB `VEuc  1 e 1 @134 ]
+"1430
+[v _TRISC TRISC `VEuc  1 e 1 @135 ]
+"1492
+[v _TRISD TRISD `VEuc  1 e 1 @136 ]
+"2364
+[v _GIE GIE `VEb  1 e 0 @95 ]
+"2394
+[v _INTE INTE `VEb  1 e 0 @92 ]
+"2397
+[v _INTEDG INTEDG `VEb  1 e 0 @1038 ]
+"2400
+[v _INTF INTF `VEb  1 e 0 @89 ]
+"12 C:\Users\Hesham Abdelkhalek\MPLABXProjects\TrafficLight.X\Main.c
+[v _systemMode systemMode `VEE951  1 e 1 0 ]
+"14
+[v _manual_active manual_active `VEuc  1 e 1 0 ]
+"16
+[v _west_timer west_timer `VEi  1 e 2 0 ]
+"17
+[v _south_timer south_timer `VEi  1 e 2 0 ]
+"19
+[v _int_debounce int_debounce `VEuc  1 e 1 0 ]
+"42
+[v _main main `(v  1 e 1 0 ]
+{
+"119
+[v main@k_164 k `i  1 a 2 20 ]
+"100
+[v main@k_161 k `i  1 a 2 18 ]
+"117
+[v main@s_163 s `i  1 a 2 24 ]
+"98
+[v main@s_160 s `i  1 a 2 22 ]
+"81
+[v main@k_158 k `i  1 a 2 16 ]
+"72
+[v main@k_156 k `i  1 a 2 14 ]
+"63
+[v main@k_154 k `i  1 a 2 12 ]
+"54
+[v main@k k `i  1 a 2 10 ]
+"110
+[v main@pressed_162 pressed `uc  1 a 1 27 ]
+"91
+[v main@pressed pressed `uc  1 a 1 26 ]
+"77
+[v main@s_157 s `i  1 a 2 34 ]
+"68
+[v main@s_155 s `i  1 a 2 32 ]
+"59
+[v main@s_153 s `i  1 a 2 30 ]
+"50
+[v main@s s `i  1 a 2 28 ]
+"126
+} 0
+"149
+[v _update_displays update_displays `(v  1 e 1 0 ]
+{
+"158
+[v update_displays@w_ones w_ones `uc  1 a 1 9 ]
+"157
+[v update_displays@w_tens w_tens `uc  1 a 1 8 ]
+"156
+[v update_displays@s_ones s_ones `uc  1 a 1 7 ]
+"155
+[v update_displays@s_tens s_tens `uc  1 a 1 6 ]
+"149
+[v update_displays@south_seconds south_seconds `i  1 p 2 0 ]
+[v update_displays@west_seconds west_seconds `i  1 p 2 2 ]
+"162
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awmod.c
+[v ___awmod __awmod `(i  1 e 2 0 ]
+{
+"10
+[v ___awmod@sign sign `uc  1 a 1 7 ]
+[v ___awmod@counter counter `uc  1 a 1 6 ]
+"5
+[v ___awmod@divisor divisor `i  1 p 2 2 ]
+[v ___awmod@dividend dividend `i  1 p 2 4 ]
+"34
+} 0
+"5 C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+[v ___awdiv __awdiv `(i  1 e 2 0 ]
+{
+"10
+[v ___awdiv@quotient quotient `i  1 a 2 8 ]
+"11
+[v ___awdiv@sign sign `uc  1 a 1 7 ]
+[v ___awdiv@counter counter `uc  1 a 1 6 ]
+"5
+[v ___awdiv@divisor divisor `i  1 p 2 2 ]
+[v ___awdiv@dividend dividend `i  1 p 2 4 ]
+"41
+} 0
+"164 C:\Users\Hesham Abdelkhalek\MPLABXProjects\TrafficLight.X\Main.c
+[v _set_lights set_lights `(v  1 e 1 0 ]
+{
+[v set_lights@s_red s_red `a  1 p 1 wreg ]
+[v set_lights@s_red s_red `a  1 p 1 wreg ]
+[v set_lights@s_yel s_yel `a  1 p 1 2 ]
+[v set_lights@s_grn s_grn `a  1 p 1 3 ]
+"165
+[v set_lights@w_red w_red `a  1 p 1 4 ]
+[v set_lights@w_yel w_yel `a  1 p 1 5 ]
+[v set_lights@w_grn w_grn `a  1 p 1 6 ]
+[v set_lights@s_red s_red `a  1 p 1 7 ]
+"172
+} 0
+"174
+[v _reset_cycle_timers reset_cycle_timers `(v  1 e 1 0 ]
+{
+"177
+} 0
+"128
+[v _init_ports init_ports `(v  1 e 1 0 ]
+{
+"147
+} 0
+"179
+[v _delay_100ms_and_poll_buttons delay_100ms_and_poll_buttons `(v  1 e 1 0 ]
+{
+[v delay_100ms_and_poll_buttons@flag_p flag_p `*.4uc  1 p 1 2 ]
+"180
+[v delay_100ms_and_poll_buttons@rb1_count rb1_count `uc  1 s 1 rb1_count ]
+"197
+[v delay_100ms_and_poll_buttons@int_deb_ctr int_deb_ctr `us  1 s 2 int_deb_ctr ]
+"204
+} 0
+"29
+[v _isr isr `II(v  1 e 1 0 ]
+{
+"40
+} 0
+"174
+[v i1_reset_cycle_timers reset_cycle_timers `(v  1 e 1 0 ]
+{
+"177
+} 0
