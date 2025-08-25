@@ -29,7 +29,6 @@ void delay_100ms_and_poll_buttons(uint8_t *button_pressed_flag);
 void __interrupt() isr(void) {
     if(INTF) {
         if (!int_debounce) {
-            // toggle mode
             if(systemMode == MODE_AUTO) systemMode = MODE_MANUAL;
             else systemMode = MODE_AUTO;
             reset_cycle_timers();
@@ -202,3 +201,4 @@ void delay_100ms_and_poll_buttons(uint8_t *flag_p) {
         }
     }
 }
+
